@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Joy Mweru Gitau</title>
+<meta name="description" content="Get in touch with Joy Mweru Gitau.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Joy <span>Mweru</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap" data-reveal>
+      <div class="eyebrow">Contact</div>
+      <h1>Let's talk.</h1>
+      <p class="lede">Whether it's a role, a project, or a data problem you can't
+        crack — drop a note below and I'll get back to you as soon as possible.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap contact-grid" data-reveal>
+
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="eyebrow">Email</div>
+          <a class="big-link" href="mailto:mweruwagitau@gmail.com">mweruwagitau@gmail.com</a>
+        </div>
+        <div class="info-item">
+          <div class="eyebrow">Phone</div>
+          <a class="big-link" href="tel:+254792811198">+254 792 811 198</a>
+        </div>
+        <div class="info-item">
+          <div class="eyebrow">Based in</div>
+          <p style="color:var(--chocolate); font-family: var(--font-display); font-size:1.3rem; margin:0;">Nairobi, Kenya</p>
+        </div>
+        <div class="info-item">
+          <div class="eyebrow">Elsewhere</div>
+          <div class="footer-icons" style="margin:0;">
+            <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn" style="border-color:var(--slate); color:var(--chocolate);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.5 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2.02-3.3-2.02 0-2.33 1.58-2.33 3.2V21H9z"/></svg>
+            </a>
+            <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub" style="border-color:var(--slate); color:var(--chocolate);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02.56 1.38.21 2.4.1 2.65.65.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ CONTACT FORM ============
+           EDIT: set the `action` URL below to your Formspree endpoint —
+           full instructions are in the comment at the top of js/script.js -->
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <label for="name">Preferred name</label>
+          <input type="text" id="name" name="name" placeholder="What should I call you?" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone-number">Phone number <span class="optional-tag">(optional)</span></label>
+          <div class="phone-field">
+            <select id="phone-code" name="phone_country_code" aria-label="Country code">
+              <option value="+254" selected>🇰🇪 +254</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+91">🇮🇳 +91</option>
+              <option value="+27">🇿🇦 +27</option>
+              <option value="+234">🇳🇬 +234</option>
+              <option value="+255">🇹🇿 +255</option>
+              <option value="+256">🇺🇬 +256</option>
+              <option value="+971">🇦🇪 +971</option>
+              <option value="+61">🇦🇺 +61</option>
+              <!-- EDIT: add more <option value="+code">flag +code</option> as needed -->
+            </select>
+            <input type="tel" id="phone-number" name="phone_number" placeholder="712 345 678">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me a bit about what you have in mind…" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send message</button>
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-connect">
+      <h2>Let's connect.</h2>
+      <p>Got a project, a role, or just want to talk data over coffee? My inbox is open.</p>
+      <div class="footer-icons">
+        <a href="mailto:mweruwagitau@gmail.com" aria-label="Email Joy" title="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.5 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2.02-3.3-2.02 0-2.33 1.58-2.33 3.2V21H9z"/></svg>
+        </a>
+        <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02.56 1.38.21 2.4.1 2.65.65.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mweru. All rights reserved.</span>
+      <span>Built with intention, not a template.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

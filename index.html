@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joy Mweru Gitau — Data Scientist &amp; Developer in progress</title>
+<meta name="description" content="Portfolio of Joy Mweru Gitau — data scientist and analyst transitioning into software development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER — appears on every page ============
+     EDIT: your name/logo lives in .logo below. Nav items live in .nav-links -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Joy <span>Mweru</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============
+       EDIT: swap the placeholder circle for a real photo — see
+       comment inside .hero-portrait below. Update titles/blurb text. -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy" data-reveal>
+        <span class="hero-eyebrow">Nairobi, Kenya · Open to opportunities</span>
+        <h1>Hi, I'm <em>Joy Mweru</em>.<br>I turn messy data into clear decisions.</h1>
+        <p class="role-typer" data-role-typer></p>
+        <p>Data scientist and analyst by trade, currently teaching myself to build the
+          products my dashboards used to just describe. I like numbers that tell
+          stories and interfaces that don't make people think twice.</p>
+        <div class="hero-cta">
+          <a href="portfolio.html" class="btn btn-primary">See my work</a>
+          <a href="about.html" class="btn btn-outline">More about me</a>
+        </div>
+      </div>
+      <div class="hero-portrait" data-reveal>
+        <div class="frame placeholder">
+          <!-- EDIT: replace this whole placeholder div with:
+               <img src="assets/img/portrait.jpg" alt="Joy Mweru Gitau">
+               once you've dropped a square photo into assets/img/ -->
+          your photo here<br>320×320px, square crop works best
+        </div>
+        <span class="tag">console.log("hello 👋")</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS & TECHNOLOGIES ============ -->
+  <section class="section-tight">
+    <div class="wrap" data-reveal>
+      <div class="eyebrow">What I work with</div>
+      <div class="section-head">
+        <h2>Skills &amp; technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="icon">📊</div>
+          <h3>Data &amp; ML</h3>
+          <ul>
+            <li>Python (pandas, scikit-learn, NumPy)</li>
+            <li>Model building &amp; evaluation</li>
+            <li>Advanced Excel</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="icon">🗄️</div>
+          <h3>Querying &amp; management</h3>
+          <ul>
+            <li>SQL &amp; database extraction</li>
+            <li>Data cleaning &amp; wrangling</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="icon">📈</div>
+          <h3>Visualization &amp; reporting</h3>
+          <ul>
+            <li>Power BI, Tableau</li>
+            <li>Microsoft 365 suite</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="icon">🎨</div>
+          <h3>Web &amp; graphic design</h3>
+          <ul>
+            <li>WordPress, Squarespace</li>
+            <li>Adobe Suite, Figma, Canva</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="icon">🧭</div>
+          <h3>Coordination &amp; support</h3>
+          <ul>
+            <li>Workflow tracking &amp; documentation</li>
+            <li>Stakeholder communication</li>
+            <li>Slack, Trello, Teams</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT PREVIEW ============ -->
+  <section>
+    <div class="wrap split" data-reveal>
+      <div class="split-copy">
+        <div class="eyebrow">A little about me</div>
+        <h2>Business tech background, design instincts, data-first brain.</h2>
+        <p>I've spent the last few years moving between analytics, ICT support and
+          web/graphic design — which means I'm equally comfortable in a Jupyter
+          notebook, a Power BI dashboard, or a Figma file. Now I'm pointing all of
+          that at software development, one project at a time.</p>
+        <a href="about.html" class="btn btn-ghost">Read the full story</a>
+      </div>
+      <div class="split-card">
+        <div class="stat-row">
+          <div class="stat"><b>3+</b><span>years in data &amp; analytics</span></div>
+          <div class="stat"><b>4</b><span>orgs worked with</span></div>
+          <div class="stat"><b>2026</b><span>currently: building</span></div>
+        </div>
+        <p style="margin:0;">From tax compliance dashboards at KRA to WordPress rebuilds
+          at HELB — I like work that has a visible, useful outcome.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO PREVIEW ============ -->
+  <section>
+    <div class="wrap" data-reveal>
+      <div class="eyebrow">Selected work</div>
+      <div class="section-head">
+        <h2>A peek at my portfolio</h2>
+        <p class="lede">Data science projects, web &amp; design work, and everything in
+          between. The full portfolio has links, tools used and a bit more detail.</p>
+      </div>
+      <div class="preview-grid">
+        <div class="preview-card">
+          <h3>AgrisenseAI</h3>
+          <p>Deep learning market recommendations &amp; price forecasts for Kenyan
+            maize, tomato and avocado farmers.</p>
+          <div class="tag-row">
+            <span class="chip">TensorFlow</span><span class="chip">Streamlit</span><span class="chip">FastAPI</span>
+          </div>
+        </div>
+        <div class="preview-card">
+          <h3>Syriatel Churn Analysis</h3>
+          <p>Predictive model identifying early indicators of customer churn for a
+            telecom provider.</p>
+          <div class="tag-row">
+            <span class="chip">scikit-learn</span><span class="chip">Pandas</span>
+          </div>
+        </div>
+        <div class="preview-card">
+          <h3>KaBrazen Website Rebuild</h3>
+          <p>Led requirements gathering and rebuilt a consortium's website on
+            Squarespace, end to end.</p>
+          <div class="tag-row">
+            <span class="chip">Squarespace</span><span class="chip">UX</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: var(--space-md); text-align:center;">
+        <a href="portfolio.html" class="btn btn-primary">View full portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section class="section-tight">
+    <div class="wrap" data-reveal>
+      <div class="eyebrow">Keeping the toolbox sharp</div>
+      <div class="section-head"><h2>Certifications</h2></div>
+      <div class="cert-list">
+        <div class="cert-item"><span class="dot"></span>
+          <div><h4>AI Essentials for Software Developers</h4><p>Moringa School</p></div>
+        </div>
+        <div class="cert-item"><span class="dot"></span>
+          <div><h4>PRINCE2® Foundation</h4><p>Project Management Certification</p></div>
+        </div>
+        <div class="cert-item"><span class="dot"></span>
+          <div><h4>Networking Essentials &amp; PCAP — Python Programming</h4><p>CISCO NetAcad</p></div>
+        </div>
+        <div class="cert-item"><span class="dot"></span>
+          <div><h4>NDG Linux Unhatched &amp; Cybersecurity Essentials</h4><p>CISCO NetAcad</p></div>
+        </div>
+        <div class="cert-item"><span class="dot"></span>
+          <div><h4>Data Protection Act &amp; Data Privacy Certification</h4><p>Capabuil</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER — Let's Connect (every page) ============
+     EDIT: your email/LinkedIn/GitHub links live here. -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-connect">
+      <h2>Let's connect.</h2>
+      <p>Got a project, a role, or just want to talk data over coffee? My inbox is open.</p>
+      <div class="footer-icons">
+        <a href="mailto:mweruwagitau@gmail.com" aria-label="Email Joy" title="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.5 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2.02-3.3-2.02 0-2.33 1.58-2.33 3.2V21H9z"/></svg>
+        </a>
+        <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02.56 1.38.21 2.4.1 2.65.65.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+        </a>
+      </div>
+      <a href="contact.html" class="btn btn-outline" style="border-color: var(--silver-blue); color: var(--bg-soft);">Or use the contact form →</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mweru. All rights reserved.</span>
+      <span>Built with intention, not a template.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

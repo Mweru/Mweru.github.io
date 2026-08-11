@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Joy Mweru Gitau</title>
+<meta name="description" content="Portfolio of data science, web development and graphic design work by Joy Mweru Gitau.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Joy <span>Mweru</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap" data-reveal>
+      <div class="eyebrow">Portfolio</div>
+      <h1>Work I've shipped, analyzed, designed and built.</h1>
+      <p class="lede">Three lanes, one brain: data science on the left, web &amp; product
+        work in the middle, visual design on the right. Filter to browse, or just scroll.</p>
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All work</button>
+        <button class="filter-btn" data-filter="data">Data science</button>
+        <button class="filter-btn" data-filter="web">Web &amp; UI/UX</button>
+        <button class="filter-btn" data-filter="design">Graphic design</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DATA SCIENCE ============
+       EDIT: each .project-card is one project. Duplicate a card to add
+       a new one, update the GitHub link in .links -->
+  <section class="section-tight section-block" data-category-group="data">
+    <div class="wrap" data-reveal>
+      <div class="eyebrow">01 — Data science &amp; ML</div>
+      <div class="section-head">
+        <h2>Where the numbers get interesting</h2>
+        <p class="lede">Projects analyzing real-world data to build models that
+          actually answer a question.</p>
+      </div>
+      <div class="project-grid">
+
+        <div class="project-card" data-category="data">
+          <span class="cat">Personal project</span>
+          <h3>Bank Marketing Campaign Analysis</h3>
+          <p>Analyzed a Portuguese bank's telemarketing data to uncover patterns and
+            build predictive models that improve direct marketing effectiveness.</p>
+          <div class="tag-row"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">Pandas</span><span class="chip">Seaborn</span></div>
+          <div class="links"><a href="#" target="_blank" rel="noopener">GitHub repo ↗</a></div>
+        </div>
+
+        <div class="project-card" data-category="data">
+          <span class="cat">Group project</span>
+          <h3>AgrisenseAI</h3>
+          <p>Deep learning &amp; analytics platform giving real-time market
+            recommendations and price forecasts for maize, tomatoes and avocados
+            grown in Kenya.</p>
+          <div class="tag-row"><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">Streamlit</span><span class="chip">FastAPI</span><span class="chip">Tableau</span></div>
+          <div class="links"><a href="#" target="_blank" rel="noopener">GitHub repo ↗</a></div>
+        </div>
+
+        <div class="project-card" data-category="data">
+          <span class="cat">Personal project</span>
+          <h3>Syriatel Customer Churn Analysis</h3>
+          <p>Identified early indicators of service discontinuation for a telecom
+            provider and built a predictive churn model.</p>
+          <div class="tag-row"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">Predictive modeling</span></div>
+          <div class="links"><a href="#" target="_blank" rel="noopener">GitHub repo ↗</a></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WEB / UI-UX ============ -->
+  <section class="section-tight section-block" data-category-group="web">
+    <div class="wrap" data-reveal>
+      <div class="eyebrow">02 — Web &amp; UI/UX</div>
+      <div class="section-head">
+        <h2>Interfaces &amp; sites I've built or maintained</h2>
+        <p class="lede">This site itself is part of the portfolio — built from
+          scratch rather than a theme. Beyond that:</p>
+      </div>
+      <div class="exp-list">
+
+        <div class="exp-item" data-category="web">
+          <span class="role">2022 – 2024</span>
+          <div>
+            <h3>KaBrazen Consortium — Website Rebuild</h3>
+            <p>Led a small team through gathering requirements and rebuilding an
+              existing website on Squarespace, aligning design with usability and
+              organizational goals. Also managed content uploads to Podbean and
+              the live site.</p>
+          </div>
+        </div>
+
+        <div class="exp-item" data-category="web">
+          <span class="role">2022 – 2023</span>
+          <div>
+            <h3>HELB — WordPress Site Maintenance</h3>
+            <p>Kept the HELB website running smoothly on WordPress while
+              partnering with the BI team on dashboards and reporting.</p>
+          </div>
+        </div>
+
+        <div class="exp-item" data-category="web">
+          <span class="role">This site</span>
+          <div>
+            <h3>joymweru.github.io <span style="font-weight:400; color:var(--ink-soft);">(you're on it)</span></h3>
+            <p>Hand-built with HTML, CSS and JavaScript — no template, no framework
+              bloat. Hosted free on GitHub Pages.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: var(--space-md); background: var(--surface-dim); border-radius: var(--radius); padding: 1.4rem 1.6rem;">
+        <p style="margin:0; font-size: var(--fs-small);"><strong style="color:var(--chocolate);">Building toward more:</strong>
+          as I take on frontend/full-stack projects, this section is where they'll live —
+          each with a short write-up, the tools used, and a link to the live
+          site or GitHub repo. Duplicate an <code>.exp-item</code> block in
+          <code>portfolio.html</code> to add one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GRAPHIC DESIGN GALLERY ============
+       EDIT: replace each .gallery-item placeholder with:
+       <div class="gallery-item" data-category="design">
+         <img src="assets/img/design-01.jpg" alt="short description">
+       </div>
+       Drop your image files into assets/img/ first. -->
+  <section class="section-tight section-block" data-category-group="design">
+    <div class="wrap" data-reveal>
+      <div class="eyebrow">03 — Graphic design</div>
+      <div class="section-head">
+        <h2>Visual work</h2>
+        <p class="lede">A grid for the design pieces — posters, social content,
+          branding, whatever you want to showcase. Swap these placeholders for
+          your images any time.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="design">image 1<br>(replace me)</div>
+        <div class="gallery-item" data-category="design">image 2<br>(replace me)</div>
+        <div class="gallery-item" data-category="design">image 3<br>(replace me)</div>
+        <div class="gallery-item" data-category="design">image 4<br>(replace me)</div>
+        <div class="gallery-item" data-category="design">image 5<br>(replace me)</div>
+        <div class="gallery-item" data-category="design">image 6<br>(replace me)</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-connect">
+      <h2>Let's connect.</h2>
+      <p>Liked what you saw? I'd love to hear from you.</p>
+      <div class="footer-icons">
+        <a href="mailto:mweruwagitau@gmail.com" aria-label="Email Joy" title="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.5 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2.02-3.3-2.02 0-2.33 1.58-2.33 3.2V21H9z"/></svg>
+        </a>
+        <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02.56 1.38.21 2.4.1 2.65.65.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+        </a>
+      </div>
+      <a href="contact.html" class="btn btn-outline" style="border-color: var(--silver-blue); color: var(--bg-soft);">Or use the contact form →</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mweru. All rights reserved.</span>
+      <span>Built with intention, not a template.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
